@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e8ff;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.background-photo {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.main-box {
+  width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.title h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.light-txt p {
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.context {
+  background-color: #fff;
+  margin-top: 0px;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 2.5rem 3rem;
+}
+
+.annual {
+  background-color: #f7f9ff;
+  border-radius: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.annual-box {
+  display: flex;
+}
+
+.annual-box div img {
+  margin-right: 1.2rem;
+}
+
+.annual a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  cursor: pointer;
+  color: #382ae1;
+}
+
+.annual a:hover {
+  text-decoration: none;
+}
+
+.light-txt {
+  margin: 1.3rem 0;
+}
+
+.annual-box-second p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  line-height: 21px;
+}
+
+.annual-box-second span {
+  font-weight: 500;
+}
+
+.btn-purple {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 30px;
+  font-weight: 900;
+  padding: 15px 0;
+  background: #382ae1;
+  border-radius: 11px;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-purple:hover {
+  background-color: #766cf1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.btn-cancel {
+  margin-top: 32px;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  border: 0;
+  cursor: pointer;
+  margin-top: 30px;
+  line-height: 20px;
+  color: #717fa6;
+  transition: all 0.2s ease;
+}
+
+.btn-cancel:hover {
+  color: #1f2e55;
+}
+
+/* hidden class*/
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .main-box {
+    width: 80%;
+  }
+  .annual-box-second p,
+  span {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .context {
+    padding: 1rem;
+  }
+  .annual {
+    padding: 1rem;
+  }
+  .annual a {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .annual {
+    display: flex;
+    flex-direction: column;
+  }
+}
